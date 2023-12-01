@@ -27,4 +27,16 @@ public static class FackyWackyExtensions
         collection.CopyTo(array, arrayIndex);
     }
 
+    public static int WhereTheFuckIsThis<T>(this IList<T> list, T elem)
+    {
+        return list.IndexOf(elem);
+    }
+
+    public static void GetTheFuckOutSpecific<T>(this IList<T> list, int index)
+    {
+        list.RemoveAt(index);
+    }
 }
+
+
+
